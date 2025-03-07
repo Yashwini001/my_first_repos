@@ -3,28 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile</title>
+    <title>Dashboard</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            max-width: 800px;
+            max-width: 1200px;
             margin: 40px auto;
             padding: 20px;
             background-color: #f0f2f5;
         }
-        h1 {
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+            border-bottom: 2px solid #1a237e;
+        }
+        header h1 {
             color: #1a237e;
-            text-align: center;
+        }
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #1a237e;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .profile, .details {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            width: 48%;
+        }
+        .profile h2, .details h2 {
+            color: #1a237e;
             border-bottom: 2px solid #1a237e;
             padding-bottom: 10px;
         }
-        p {
+        .profile p, .details p {
             line-height: 1.6;
             margin: 15px 0;
-            padding: 10px;
-            background-color: white;
-            border-radius: 5px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
         strong {
             color: #1a237e;
@@ -33,9 +55,28 @@
     </style>
 </head>
 <body>
-    <h1>Profile</h1>
-    <p><strong>Name:</strong> Yashwini</p>
-    <p><strong>Designation:</strong> Lecturer</p>
-    <p><strong>Institute:</strong> Yenepoya Institute of Arts, Science, Commerce and Management</p>
+    <header>
+        <h1>Dashboard</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Profile</a>
+            <a href="#">Settings</a>
+            <a href="#">Logout</a>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="profile">
+            <h2>Profile</h2>
+            <p><strong>Name:</strong> Yashwini</p>
+            <p><strong>Designation:</strong> Lecturer</p>
+            <p><strong>Institute:</strong> Yenepoya Institute of Arts, Science, Commerce and Management</p>
+        </div>
+        <div class="details">
+            <h2>Details</h2>
+            <p><strong>Courses:</strong> Computer Science, Mathematics</p>
+            <p><strong>Experience:</strong> 5 years</p>
+            <p><strong>Contact:</strong> yashwini@example.com</p>
+        </div>
+    </div>
 </body>
 </html>
