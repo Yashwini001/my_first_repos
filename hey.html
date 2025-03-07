@@ -7,6 +7,7 @@
     <style>
         body {
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             height: 100vh;
@@ -21,12 +22,36 @@
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        .dashboard {
+            display: flex;
+            gap: 10px;
+        }
+        .dashboard button {
+            padding: 10px 20px;
+            font-size: 1em;
+            color: white;
+            background-color: #1a237e;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .dashboard button:hover {
+            background-color: #3949ab;
         }
     </style>
 </head>
 <body>
     <div class="message">
         Heyyy... GitHub!!!!!
+    </div>
+    <div class="dashboard">
+        <button>Home</button>
+        <button>Profile</button>
+        <button>Settings</button>
+        <button>Logout</button>
     </div>
 </body>
 </html>
